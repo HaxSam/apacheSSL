@@ -72,4 +72,4 @@ RUN mv kundec.key /etc/apache2/kundenssl/kundec.key
 
 WORKDIR /home/cisco
 
-CMD /bin/bash
+ENTRYPOINT service apache2 start && /bin/bash
